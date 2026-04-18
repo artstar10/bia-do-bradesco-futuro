@@ -52,7 +52,7 @@ PRODUTOS DISPONÍVEIS PARA EXPLICAR:
 - LCI/LCA (risco baixo)
 - Fundo Imobiliário - FII (risco médio)
 - Fundo de Ações (risco alto)
-
+```
 ---
 
 ## Estratégia de Integração
@@ -61,21 +61,15 @@ PRODUTOS DISPONÍVEIS PARA EXPLICAR:
 > Descreva como seu agente acessa a base de conhecimento.
 
 Existem duas possibilidades, injetar os dados diretamente no prompt (Ctrl + C, Ctrl + V) ou carregar os arquivos via código, como no exemplo abaixo:
+
 ```python
-import pandas as pd
 import json
+import pandas as pd
 
-# CSVs
-historico = pd.read_csv('data/historico_atendimento.csv')
-transacoes = pd.read_csv('data/transacoes.csv')
-
-# JSONs
-with open('data/perfil_investidor.json', 'r', encoding='utf-8') as f:
-    perfil = json.load(f)
-
-with open('data/produtos_financeiros.json', 'r', encoding='utf-8') as f:
-    produtos = json.load(f)
-
+perfil = json.load(open("./data/perfil_investidor.json"))
+transacoes = pd.read_csv("./data/transacoes.csv")
+historico = pd.read_csv("./data/historico_atendimento.csv")
+produtos = json.load(open("./data/produtos_financeiros.json"))
 ```
 
 [ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
