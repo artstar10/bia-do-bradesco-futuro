@@ -35,4 +35,4 @@ O principal diferencial está na personalização. O usuário aprende finanças 
 
 ## Link do Vídeo
 
-> [[Veja o pitch do projeto aqui em video]](https://notebooklm.google.com/notebook/2d15fc98-7277-4213-aad0-578f0842dc0b)
+> [[Veja o pitch do projeto aqui em video]](https://notebooklm.google.com/notebook/2d15fc98-7277-4213-aad0-578f0842dc0b/artifact/6eb0767c-59fa-413e-986b-ebb168f9f6e9)
